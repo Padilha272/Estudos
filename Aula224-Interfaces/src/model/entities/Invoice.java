@@ -1,38 +1,35 @@
 package model.entities;
 
 public class Invoice {
-	
-	private double basicPayment;
-	private double tax;
-	
+
+	private Double basicPayment;
+	private Double tax;
+
 	public Invoice() {
-		
 	}
 
-	public Invoice (double basicPayment, double tax) {
+	public Invoice(Double basicPayment, Double tax) {
 		this.basicPayment = basicPayment;
 		this.tax = tax;
 	}
 
-	public double getBasicPayment() {
+	public Double getBasicPayment() {
 		return basicPayment;
 	}
 
-	public void setBasicPayment(double basicPayment) {
+	public void setBasicPayment(Double basicPayment) {
 		this.basicPayment = basicPayment;
 	}
 
-	public double getTax() {
+	public Double getTax() {
 		return tax;
 	}
 
-	public void setTax(double tax) {
+	public void setTax(Double tax) {
 		this.tax = tax;
 	}
-	
-	public double getTotalPayment() {
-		return getBasicPayment( ) + getTax();
+
+	public Double getTotalPayment() {
+		return getBasicPayment() + getTax();
 	}
-	
-	
 }
