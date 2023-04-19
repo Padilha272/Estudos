@@ -1,5 +1,6 @@
 package model.services;
 
-public class TaxService {
+public interface TaxService {
 
+	double tax(double amount);
 }
